@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <link href="https://fonts.googleapis.com/css2?family=Marcellus&display=swap" rel="stylesheet">
+
+    <title>Admin The Coffe House</title>
+    <style>
+        body {
+
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+        }
+
+        .header {
+            font-family: 'Marcellus', serif;
+            background-color: #BD9F81;
+            color: #2A1710;
+            padding: 20px;
+        }
+
+        .header h1 {
+            margin: 0;
+        }
+
+        .container {
+            display: flex;
+        }
+
+        .sidebar {
+            background-color: #f1f1f1;
+            width: 200px;
+            padding: 20px;
+        }
+
+        .sidebar ul {
+            list-style-type: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        .sidebar li {
+            margin-bottom: 10px;
+        }
+
+        .sidebar a {
+        font-size: 17px;
+          font-family: 'Marcellus', serif;
+           text-align: center;
+            text-decoration: none;
+            color: #333;
+            display: block;
+            padding: 10px;
+            background-color: #ddd;
+            border-radius: 5px;
+        }
+
+        .sidebar a:hover {
+            background-color: #BD9F81;
+        }
+  /* Quản Lí Khách Hàng */
+  .content {
+        padding: 20px;
+    }
+
+    table {
+        width: 100%;
+        border-collapse: collapse;
+    }
+
+    th, td {
+        padding: 10px;
+        text-align: left;
+        border-bottom: 1px solid #ddd;
+    }
+
+    th {
+        background-color: #333;
+        color: #fff;
+    }
+
+    tbody tr:hover {
+        background-color: #f5f5f5;
+    }
+
+    .action-buttons button {
+        margin-right: 5px;
+        padding: 5px 10px;
+        background-color: #333;
+        color: #fff;
+        border: none;
+        cursor: pointer;
+    }
+
+    .action-buttons button:hover {
+        background-color: #555;
+    }
+    /* Quản Lí Khách Hàng */
+
+    </style>
+</head>
+<body>
+    <div class="header">
+        <h1>ADMIN The Coffe House</h1>
+    </div>
+    <div class="container">
+        <div class="sidebar">
+            <ul>
+                <li><a href="#">Quản Lí Sản Phẩm</a></li>
+                <li><a href="#">Quản Lí Khách Hàng</a></li>
+                <li><a href="#">Quản Lí Đơn Hàng</a></li>
+                <li><a href="#">Quản Lí Liên Hệ</a></li>
+                <li><a href="#">Quản Lí Khách Hàng</a></li>
+                <li><a href="#">Quản Lí Tài Khoản</a></li>
+                <li><a href="#">Quản Lí Bình Luận & Đánh Giá</a></li>
+            </ul>
+        </div>
+        <div class="content">
+            <h2>Quản lý sản phẩm</h2>
+    <table>
+        <thead>
+            <tr>
+                <th>ID</th>
+                <th>Tên sản phẩm</th>
+                <th>Hình ảnh</th>
+                <th>Danh mục</th>
+                <th>Giá</th>
+                <th>Sale</th>
+                <th>Chi tiết</th>
+                <th>Lượt xem</th>
+                <th>Tồn kho</th>
+                <th>Thao tác</th>
+                
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>1</td>
+                <td>Áo thun</td>
+                <td><img src="path/to/image1.jpg" alt="Áo thun"></td>
+                <td>Áo</td>
+                <td>100,000 VNĐ</td>
+                <td>10%</td>
+                <td>Áo thun cotton cao cấp...</td>
+                <td>2250</td>
+                <td>50</td>
+                <td>
+                    <button>Thêm</button>
+                    <button>Sửa</button>
+                    <button>Xóa</button>
+                </td>
+            </tr>
+            <tr>
+                <td>2</td>
+                <td>Quần jeans</td>
+                <td><img src="path/to/image2.jpg" alt="Quần jeans"></td>
+                <td>Quần</td>
+                <td>200,000 VNĐ</td>
+                <td>20%</td>
+                <td>Quần jeans nam nữ...</td>
+                <td>2250</td>
+                <td>30</td>
+                <td>
+                    <button>Thêm</button>
+                    <button>Sửa</button>
+                    <button>Xóa</button>
+                </td>
+            </tr>
+            <!-- Thêm các hàng dữ liệu khác tùy ý -->
+        </tbody>
+    </table>
+
+
+
+    </div>
+</body>
+</html>

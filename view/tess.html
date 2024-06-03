@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Thông tin đặt hàng</title>
+    <style>
+
+.container16 {
+padding: 30px;
+}
+.container15 {
+    margin-left: 147px;
+    max-width: 1000px;
+    background-color: #5A1720;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    display: flex;
+    color: #fff;
+}
+
+.info-user-oder {
+    flex: 1;
+    padding-right: 20px;
+}
+
+.info-user-oder h2 {
+    margin-bottom: 20px;
+  
+}
+
+.info-user-oder input {
+    width: 100%;
+    margin-bottom: 10px;
+    padding: 5px;
+}
+
+.info-product-oder {
+    flex: 1;
+    padding-left: 20px;
+}
+
+.info-product-oder h2 {
+    margin-bottom: 20px;
+  
+}
+
+.info-product-oder table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.info-product-oder th,
+.info-product-oder td {
+    padding: 5px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+}
+
+.info-product-oder .total {
+    font-weight: bold;
+}
+
+.payment-method {
+    margin-top: 20px;
+}
+
+.payment-method label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+.payment-method input[type="radio"] {
+    margin-right: 10px;
+}
+
+.thanhtoan {
+    text-align: right;
+    margin-top: 20px;
+}
+
+h2 {
+    color: #fff;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+form {
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+}
+
+label {
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="password"] {
+    padding: 15px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    border: 1px solid #ddd;
+    width: 440px;
+    transition: 0.9s;
+}
+
+input[type="text"]:focus,
+input[type="email"]:focus,
+input[type="password"]:focus {
+    border: 1px solid #000;
+    outline: none;
+}
+
+.thanhtoan {
+    margin-top: 30px;
+}
+
+.thanhtoan button {
+    color: #fff;
+    font-size: 16px;
+    margin-left: 10%;
+    background-color: #BE9C79;
+    border: none;
+    padding: 10px;
+    width: 150px;
+    transition: 0.9s;
+}
+
+.thanhtoan button:hover {
+    background-color: #121212;
+}
+    </style>
+</head>
+<body>
+    <div class="container16">
+
+ 
+    <div class="container15">
+        <div class="info-user-oder">
+            <h2>THÔNG TIN ĐẶT HÀNG</h2>
+            <form action="index.php?pg=thanhtoan" method="post">
+                <input type="text" id="name" name="nguoidat_ten" placeholder="Họ Tên Người Nhận" required>
+                
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="nguoidat_email" placeholder="Email" required>
+                    
+                <label for="text">Số điện Thoại:</label>
+                <input type="text" id="dienthoai" name="nguoidat_tel" placeholder="Số điện thoại" required>
+        
+                <label for="text">Địa Chỉ:</label>
+                <input type="text" id="diachi" name="nguoidat_diachi" placeholder="Địa chỉ" required>
+        
+               
+        </div>
+        
+        <div class="info-product-oder">
+            <h2>THÔNG TIN SẢN PHẨM ĐÃ ĐẶT</h2>
+            <table>
+                <tr>
+                    <th>Tên sản phẩm</th>
+                    <th>Giá</th>
+                    <th>Số lượng</th>
+                </tr>
+                <tr>
+                    <td>Tên sản phẩm 1</td>
+                    <td>100,000 VNĐ</td>
+                    <td>2</td>
+                </tr>
+                <tr class="total">
+                    <td colspan="2">Tổng đơn hàng:</td>
+                    <td>300,000 VNĐ</td>
+                </tr>
+            </table>
+            
+            <div class="voucher">
+                <h3>Voucher:</h3>
+                <p>Mã giảm giá: ABC123</p>
+                <p>Giảm giá: 10%</p>
+            </div>
+            
+            <div class="payment-method">
+                <h2>Phương thức thanh toán</h2>
+                <label>
+                    <input type="radio" name="pttt" value="1" checked>
+                    Thanh toán khi nhận hàng (shipcode)
+                </label>
+                <label>
+                    <input type="radio" name="pttt" value="2">
+                    Thanh toán bằng thẻ tín dụng
+                </label>
+                <label>
+                    <input type="radio" name="pttt" value="3">
+                    Thanh toán qua chuyển khoản ngân hàng
+                </label>
+                
+            </div>
+            
+            <div class="thanhtoan">
+                <button type="submit" name="thanhtoan">Thanh Toán</button>
+            </div>
+            </form>
+        </div>
+    </div>
+    </div>
+</body>
+</html>

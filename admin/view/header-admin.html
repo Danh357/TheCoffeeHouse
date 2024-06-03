@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <link href="https://fonts.googleapis.com/css2?family=Marcellus&display=swap" rel="stylesheet">
+    <title>Admin The Coffe House</title>
+</head>
+<body>
+    <style>
+          body {
+
+margin: 0;
+padding: 0;
+font-family: Arial, sans-serif;
+}
+
+.header {
+font-family: 'Marcellus', serif;
+background-color: #BD9F81;
+color: #2A1710;
+padding: 20px;
+}
+
+.header h1 {
+margin: 0;
+}
+
+.container {
+display: flex;
+}
+
+.sidebar {
+background-color: #f1f1f1;
+width: 200px;
+padding: 20px;
+}
+
+.sidebar ul {
+list-style-type: none;
+padding: 0;
+margin: 0;
+}
+
+.sidebar li {
+margin-bottom: 10px;
+}
+
+.sidebar a {
+font-size: 17px;
+font-family: 'Marcellus', serif;
+text-align: center;
+text-decoration: none;
+color: #333;
+display: block;
+padding: 10px;
+background-color: #ddd;
+border-radius: 5px;
+}
+
+.sidebar a:hover {
+background-color: #BD9F81;
+}
+    </style>
+    <div class="header">
+        <h1>ADMIN The Coffe House</h1>
+    </div>
+    <div class="container">
+        <div class="sidebar">
+            <ul>
+                <li><a href="#">Quản Lí Sản Phẩm</a></li>
+                <li><a href="#">Quản Lí Khách Hàng</a></li>
+                <li><a href="#">Quản Lí Đơn Hàng</a></li>
+                <li><a href="#">Quản Lí Liên Hệ</a></li>
+                <li><a href="#">Quản Lí Tài Khoản</a></li>
+                <li><a href="#">Quản Lí Bình Luận & Đánh Giá</a></li>
+            </ul>
+        </div>
+        <div class="content">
+            <h2>Quản lí Khách Hàng</h2>
+           <!-- Quản lí Khách Hàng -->
+            <table>
+              <thead>
+                  <tr>
+                      <th>ID</th>
+                      <th>Tên</th>
+                      <th>Số điện thoại</th>
+                      <th>Địa chỉ</th>
+                      <th>Email</th>
+                      <th>Thao tác</th>
+                  </tr>
+              </thead>
+              <tbody>
+                  <tr>
+                      <td>1</td>
+                      <td>John Doe</td>
+                      <td>123456789</td>
+                      <td>123 ABC Street</td>
+                      <td>john.doe@example.com</td>
+                      <td>
+                          <button>Thêm</button>
+                          <button>Sửa</button>
+                          <button>Xóa</button>
+                      </td>
+                  </tr>
+                  <tr>
+                      <td>2</td>
+                      <td>Jane Smith</td>
+                      <td>987654321</td>
+                      <td>456 XYZ Street</td>
+                      <td>jane.smith@example.com</td>
+                      <td>
+                          <button>Thêm</button>
+                          <button>Sửa</button>
+                          <button>Xóa</button>
+                      </td>
+                  </tr>
+                  <!-- Thêm các hàng dữ liệu khác tùy ý -->
+              </tbody>
+          </table>
+        </div>

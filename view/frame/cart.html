@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="../css/cart.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Marcellus&display=swap" rel="stylesheet">
+    <title>The Coffe House</title>
+    
+</head>
+<body>
+    <div class="container">
+        <div class="banner">
+           <img src="../image/banner7.jpg" id="img" onclick="changeImage()" alt="">
+        </div>
+            <div class="logo-menu">       
+                   <img src="../image/logo.png" alt="">      
+                   <ul>
+                   <li><a href="../contronller/index.php">HOME</a></li>
+                   <li><a href="index.php?pg=">MENU</a></li>
+                   <li><a href="#">SHOP</a></li>
+                   <li><a href="index.php?pg=lienhe">Liên Hệ</a></li>
+                   <li><a href="#">About Me</a></li>     
+                   <li><a href="#"><i class="fa-solid fa-magnifying-glass"></i></a></li>    
+                   <li><a href="index.php?pg=dangnhap"><i class="fa-solid fa-user"></i></a></li>     
+                   <li><a href="#"><i class="fa-solid fa-cart-shopping"></i></a></li>  
+                   <li><a href="#"><i class="fa-solid fa-bars" onclick="toggleDropdown(event)"></i></a></li>  
+                       <div class="bars"></div>
+                       <div class="in-bars" id="dropdownContent">
+                           <span class="dau-x" onclick="toggleDropdown(event)">&times;</span>
+                           <img src="../image/logo.png" alt="">
+                           <p>Lorem ipsum dolor sit amet, consecteturadip iscing elit, sed do eiusmod tempor incididunt ut labore et dolore sit.</p>
+                           <a href="">docongdanh357@gmail.com</a>
+                           <a href="">+84 967400391</a>
+                          <div class="icons-bars">
+                          <i class="fa-brands fa-instagram"></i>
+                          <i class="fa-brands fa-facebook-f"></i>
+                          <i class="fa-brands fa-tiktok"></i>
+                          <i class="fa-brands fa-twitter"></i>
+   
+                          </div>
+                    </div>                   
+               </ul>   
+           </div>
+           <div class="title-header">
+                <span>CART</span>
+           </div> 
+    </div>
+
+ <!-- body -->
+    <div class="container2">
+        <table class="cart-table">
+            <thead>
+              <tr>
+                <th></th>
+                <th>Tên sản phẩm</th>
+                <th>Giá</th>
+                <th>Số lượng</th>
+                <th>Tổng cộng</th>
+                <th></th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+              
+                <td><img src="../image/product-img-1.png" alt="Tên sản phẩm 1"></td>
+                <td>Tên sản phẩm 1</td>
+                <td>100.000 VNĐ</td>
+                <td><input class="quantity" type="number" min="1" value="1"></td>
+                <td>100.000 VNĐ</td>
+                <td><a href=""><i class="fa-solid fa-xmark"></i></a></td>
+              </tr>
+              <tr>
+                <td><img src="../image/product-img-1.png" alt="Tên sản phẩm 2"></td>
+                <td>Tên sản phẩm 2</td>
+                <td>150.000 VNĐ</td>
+                <td><input class="quantity" type="number" min="1" value="1"></td>
+                <td>150.000 VNĐ</td>
+                <td><a href=""><i class="fa-solid fa-xmark"></i></a></td>
+              </tr>
+            </tbody>
+        </table>
+        <div class="button-reset">
+            <input class="code" type="text" placeholder="Coupon Code">
+            <button><a href="">APPLY COUPON</a></button>
+            <button><a href="">UPDATE CART</a></button>
+        </div>        
+        <div class="cart-totals">   
+            <p>CART TOTALS</p>
+            <table class="totals">
+                    <td class="td1">Tổng tiền:</td>
+                    <td >250.000 VNĐ</td>        
+            </table>  
+          
+        </div>
+      
+        <div class="info-user-oder">
+            <h2> THÔNG TIN ĐẶT HÀNG</h2> 
+            <form action="index.php?pg=thanhtoan" method="post">
+                <input type="text" id="name" name="username"  placeholder="Họ Tên Người Nhận">
+                
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email"   placeholder="Email" required>
+                    
+                <label for="text">Số điện Thoại:</label>
+                <input type="text" id="dienthoai" name="dienthoai" placeholder=" Number Phone" required>
+        
+                <label for="text">Địa Chỉ:</label>
+                <input type="text" id="diachi" name="diachi" placeholder=" AddDress" required>
+
+                
+                <div class="thanhtoan">
+                    <button name="thanhtoan"><a href="">Thanh Toán</a></button>
+                </div>                
+              </form>
+        </div>
+ </div> 
+<!-- footer -->
+<div class="container6">
+    <div class="wrapper-located">
+        <div class="banner-footter">
+            <img src="../image/footer-banner-img-1.jpg" alt="">
+        </div>
+    <div class="located">
+        <img src="../image/logo.png" alt="">
+        <p>“Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+            incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,               
+            nostrud exercitation ullamco laboris.”</p>
+        <h1>STORES</h1>
+        <span>Địa chỉ: 143/43 Hà Thị Khiêm, Trung Mỹ Tây, Tp Hồ Chí Minh</span>
+        <h3>NEWS AS FRESH AS OUR COFFEE</h3>
+        <div class="gmail">
+            <input type="text" placeholder="Địa Chỉ Email"><i class="fa-regular fa-envelope"></i>
+        </div>   
+        </div>
+    </div>
+</div>
+
+<div class="container7">
+    <div class="wp-footter">
+    <div class="footter-menu">
+    <span>© 2018 Qode Interactive, All Rights Reserved</span>
+    <div class="menu-ft">
+    <ul>
+        <li><a href="#">Home</a></li>
+        <li><a href="#">Menu</a></li>
+        <li><a href="#">Shop</a></li>
+        <li><a href="#">Liên Hệ</a></li>
+    </ul>
+  </div>
+  <div class="app">
+    <i class="fa-brands fa-square-facebook"></i>|
+    <i class="fa-brands fa-tiktok"></i>|
+    <i class="fa-brands fa-square-instagram"></i>|
+    <i class="fa-brands fa-twitter"></i>|
+    <i class="fa-brands fa-cc-amazon-pay"></i>
+   </div>
+ </div>
+</div>
+
+    
+    
+
+
+</div>
+
+<script src="../js/cart.js"></script>        

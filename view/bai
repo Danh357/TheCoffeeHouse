@@ -1,0 +1,22 @@
+<!-- <?php 
+   if(isset($sanpham) && count($sanpham) >0){
+      foreach($sanpham as $sanphams){
+          ?>
+           <div class="product-home">
+            <img src="<?=$sanphams['img']?>" alt="">
+             <p href="#"><?=$sanphams['name']?></p>
+             <a><?=$sanphams['price']?>$</a>
+             <button class="add-to-cart">
+               
+                <a href="index.php?pg=chitet">xem chi tiết</a>
+             </button>
+            
+             </div>
+           <?php
+      }
+    } 
+    else {
+      echo 'Chưa có sản phẩm nào!';
+
+  }             
+  ?> -->
